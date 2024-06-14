@@ -9,12 +9,11 @@ class Kategori extends Model
 {
     use HasFactory;
 
-    public $incrementing = false;  
-    protected $keyType = 'string'; 
-
+    protected $table = 'kategoris';
     protected $fillable = [
-        'id', 
-        'nama_pengaduan',
-        'deskripsi',
+        'id', 'nama_pengaduan', 'deskripsi'
     ];
+
+    public $incrementing = false; 
+    protected $keyType = 'string';
 }
